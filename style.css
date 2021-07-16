@@ -167,6 +167,7 @@ input {
   border-top: 2px solid #dcdcdc;
   border-bottom: 2px solid #dcdcdc;
   margin-bottom: 5px;
+  margin: 5px;
   padding-right: 9px;
 }
 .boutons_filtre:hover {
