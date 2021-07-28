@@ -12,74 +12,67 @@
     </head>
 
     <body>
-            <!-- logo et header-->
+            <!-----------------logo et header------------------------>
         <header>
-            <div>
-                <nav>
-                    <ul class="naviguateur">
-                        <li id="li-logo">
-                            <a href="#" class="logo">
-                                <img src="images/logo/Reservia@3x.png" alt="logo Reservia"/>
-                            </a>
-                        </li>
-                        <div class="menu">
-                            <li class="li-inscrire">
-                                <a class="button_inscription" href="#">S'inscrire</a>
-                            </li>
-                            <li class="items">
-                                <a class="button_nav_top1" href="#ancre-hebergements">Hébergements</a>
-                            </li>
-                            <li class="items">
-                                <a class="button_nav_top2" href="#ancre-activites">Activités</a>
-                            </li>
-                        </div>
-                    </ul>  
-                </nav>  
-            </div>
+            <nav>
+                <ul>
+                    <li id="li-logo">
+                        <img src="images/logo/Reservia.svg" alt="logo Reservia"/>
+                    </li>
+                    <li id="li-inscrire">
+                        <a href>S'inscrire</a>
+                    </li>
+                    <li class="li-hebergements">
+                        <a href="#ancre-hebergements">Hébergements</a>
+                    </li>
+                    <li class="li-activites">
+                        <a href="#ancre-activites">Activités</a>
+                    </li>
+                </ul>  
+            </nav>
         </header>
         
 
-            <!--menu recherche et filtres-->
+            <!-----------------the body of the site------------------>
          
         <section>
+            <!----------------filtres-------------->
            <h1>Trouvez votre hébergement pour des vacances de rève</h1>
                 <p class="accueil">En plein centre ville ou en plein nature</p>
 
-            <div id="recherche_loc">
-                <form class="recherche_ville">
-                    <div class="mapmarker">
-                        <span><i class="fas fa-map-marker-alt"></i></span>
-                    </div>
-                    <input type="text" name="ville" placeholder="Marseille,France" maxlength="10"/>
-                    <button class="bouton_recherche">
-                        <span class="loupe">
-                            <i class="fas fa-search"></i></span>
-                        <span class="recherche"><strong>Recherche</strong></span>
-                    </button>  
-                </form>  
+            <div class="recherche_loc">
+                <button type="button" class="mapmarker">
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                </button>
+                <input type="text" class="search" placeholder="Marseille,France">
+                <button type="button" class="bouton_recherche">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                    <span>Recherche</span>
+                </button>
             </div>
-            <div id="nav_filtres">
+            <!--filtres-->
+            <div class="les_filtres">
+                <h3>Filtres</h3>
                 <div class="filtre">
-                    <strong>Filtres</strong>
+                <boutton class="boutons_filtre" type="button">Économique
+                    <i class="fas fa-money-bill-wave circle-icon"></i>
+                </boutton>
+                <button class="boutons_filtre" type="button">Familial
+                    <i class="fas fa-child circle-icon"></i>
+                </button>
+                <button class="boutons_filtre" type="button">Romantique
+                    <i class="fas fa-heart circle-icon"></i>
+                </button>
+                <button class="boutons_filtre" type="button">Animaux autorisés
+                    <i class="fas fa-dog circle-icon"></i>
+                </button>
                 </div>
-                <a class="boutons_filtre" href="#">
-                    <i class="fas fa-money-bill-wave"></i> <strong>Économique</strong>
-                </a>
-                <a class="boutons_filtre" href="#">
-                    <i class="fas fa-child"></i> <strong>Familial</strong>
-                </a>
-                <a class="boutons_filtre" href="#">
-                    <i class="fas fa-heart"></i> <strong>Romantique</strong>
-                </a>
-                <a class="boutons_filtre" href="#">
-                    <i class="fas fa-dog"></i> <strong>Animaux autorisés</strong>
-                </a>
             </div>
             <div class="info">
                 <i class="fas fa-info"></i>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
-
+             <!--------populars et hébergement------>
         <main>
             
             <aside class="box">
@@ -96,7 +89,7 @@
                             </span>
                             <span class="description_pop">
                                 <span class="p"><strong>Hôtel le soleil du matin</strong></span>
-                                <span class="p">Nuit à partir de 128€</span>
+                                <span class="p">Nuit à partir de 128<strong>€</strong></span>
                                 <span class="etoiles">
                                     <i class="fas fa-star etoile_bleu"></i>
                                     <i class="fas fa-star etoile_bleu"></i>
@@ -113,7 +106,7 @@
                             </span>
                             <span class="description_pop">
                                 <span class="p"><strong>Au coeur de l'eau Chambres d'hôtes</strong></span>
-                                <span class="p">Nuit à partir de 71€</span>
+                                <span class="p">Nuit à partir de 71<strong>€</strong></span>
                                 <span class="etoiles">
                                     <i class="fas fa-star etoile_bleu"></i>
                                     <i class="fas fa-star etoile_bleu"></i>
@@ -128,8 +121,8 @@
                                 <img src="images/hebergements/3_medium/hotel_bleu_et_blanc.jpg" alt="hotel_bleu_et_blanc"/>
                             </span>
                             <span class="description_pop">
-                                <span class="p"><strong>Au coeur de l'eau Chambres d'hôtes</strong></span>
-                                <span class="p">Nuit à partir de 71€</span>
+                                <span class="p"><strong>Hotel Tout bleu et Blanc</strong></span>
+                                <span class="p">Nuit à partir de 71<strong>€</strong></span>
                                 <span class="etoiles">
                                     <i class="fas fa-star etoile_bleu"></i>
                                     <i class="fas fa-star etoile_bleu"></i>
@@ -256,66 +249,44 @@
                
 
 		            
-                <!----------------------Activités----------------->
-
-                <div class="activites_Marseille" id="ancre-activites">
-                    <div class="titre">
-                        <h2>Activités à Marseille</h2>
-                    </div>
-
-                    <div class="box_photo_1">
-                        <div class="photo1">
-                            <a class="activite vieu_port" href="#">
-                                <div class="img-activite">
-                                    <img src="images/activites/3_medium/vieux_port.jpg" alt="vieux_port">
-                                </div>
-                                <span><strong>Vieux Port</strong></span>                  
-                            </a>
-                        </div>                    
-                        <div class="photo2">
-                            <a class="activite pomegues" href="#">
-                                <div class="img-activite">
-                                   <img src="images/activites/3_medium/fort_de_pomègues.jpg" alt="pomegues"/>
-                                </div>
-                                <span><strong>Fort de Pomègues</strong></span>
-                            </a>
-
-                            <a class="activite frioul" href="#">
-                                <div class="img-activite">
-                                    <img src="images/activites/3_medium/liles_du_frioul.jpg" alt="liles_frioul"/>
-                                </div>
-                                <span><strong>Iles du Frioul</strong></span>
-                            </a>
-                        </div> 
-                    </div>
-                    <div class="box_photo_2">
-                        <div class="photo1">
-                            <a class="activite calanques" href="#">
-                                <div class="img-activite">
-                                    <img src="images/activites/3_medium/parc_des_Calanques.jpg" alt="parc_calanques">
-                                </div>
-                                <span><strong>Parc National des Clanques </strong></span>
-                            </a>
-                        </div>
-                        <div class="photo2">
-                            <a class="activite notre_dame" href="#">
-                                <div class="img-activite">
-                                    <img src="images/activites/3_medium/notre_dame.jpg" alt="notre_dame">
-                                </div>
-                                <span><strong>Notre-Dame-de-la-Garde</strong></span>
-                            </a>
-                            <a class="activite longchamps" href="#">
-                                <div class="img-activite">
-                                    <img src="images/activites/3_medium/parc_longchamp.jpg" alt="p_longchamp">
-                                </div>
-                                <span><strong>Parc Longchamps</strong></span>
-                            </a>
-                        </div>
-                    </div>
+                <!--------------Activités------------>
+        <section class="bloc_activites_a_marseille">
+            <div id="titre-activites">
+                <h2>Activités à Marseille</h2>
+            </div>
+            <div class= "box_activites_marseille">
+                <a href="" class="box_img">
+                    <img class="img_activites" src="images/activites/3_medium/vieux_port.jpg" alt="vieux_port"/>
+                    <h3 class="nameimg">Vieux Port</h3>   
+                </a>         
+                <div class="small_activites_marseille">
+                    <a href="" class="box_img" id="fort_de_pomegues">
+                        <img class="img_activites" src="images/activites/3_medium/fort_de_pomègues.jpg" alt="pomegues"/>
+                        <h3 class="nameimg">Fort de Pomègues</h3>
+                    </a>
+                    <a href="" class="box_img" id="liles_du_frioul">
+                        <img class="img_activites" src="images/activites/3_medium/liles_du_frioul.jpg" alt="liles_frioul"/>
+                        <h3 class="nameimg">liles du frioul</h3>
+                    </a>
                 </div>
+                <a href="" class="box_img">
+                    <img class="img_activites" src="images/activites/3_medium/parc_des_Calanques.jpg" alt="parc_calanques"/>
+                    <h3 class="nameimg">National des Clanques</h3>
+                </a>
+                <div class="small_activites_marseille">
+                    <a href="" class="box_img" id="fort_de_pomegues">
+                        <img class="img_activites" src="images/activites/3_medium/notre_dame.jpg" alt="notre_dame"/>
+                        <h3 class="nameimg">Notre Dame de la Garde</h3>
+                    </a>
+                    <a href="" class="box_img" id="parc_longchamp">
+                        <img class="img_activites"  src="images/activites/3_medium/parc_longchamp.jpg" alt="p_longchamp"/>
+                        <h3 class="nameimg">Parc Longchamps</h3>
+                    </a>
+                </div>
+            </div>
         </section>
 
-            <!-- footer-->
+            <!-------------------------------footer---------------------------------------------->
 
         <footer class="footer">
 
